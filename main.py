@@ -1,5 +1,6 @@
 from random import randint
 itens = ('Pedra', 'Papel', 'Tesoura')
+results = ('EMPATE!', 'JOGADOR VENCEU!',' COMPUTADOR VENCEU!', 'JOGADA INVÁLIDA!')
 computador = randint(0, 2)
 print('''Suas opções:
 [ 0 ] PEDRA
@@ -13,28 +14,28 @@ print('Computador jogou {}'.format(itens[computador]))
 print('-=' * 11)
 if computador == 0:
     if jogador == 0:
-        print('EMPATE!')
+        print(results[0])
     elif jogador == 1:
-        print('JOGADOR VENCEU!')
+        print(results[1])
     elif jogador == 2:
-        print('COMPUTADOR VENCEU!')
+        print(results[2])
     else:
-        print('JOGADA INVÁLIDA!')
+        print(results[3])
 elif computador == 1:
     if jogador == 0:
-        print('COMPUTADOR VENCEU!')
+        print(results[2])
     elif jogador == 1:
-        print('EMPATE!')
+        print(results[0])
     elif jogador == 2:
-         print('JOGADOR VENCEU!')
+         print(results[1])
     else:
-        print('JOGADA INVÁLIDA!')
+        print(results[3])
 elif computador == 2:
     if jogador == 0:
-        print('JOGADOR VENCEU!')
+        print(results[1])
     elif jogador == 1:
-        print('COMPUTADOR VENCEU!')
+        print(results[2])
     elif jogador == 2:
-        print('EMPATE!')
+        print(results[0])
     else:
-        print('JOGADA INVÁLIDA!')
+        print(results[3])
