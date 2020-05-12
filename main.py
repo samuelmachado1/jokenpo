@@ -2,7 +2,12 @@ from random import randint
 from time import sleep
 
 itens = ('Pedra', 'Papel', 'Tesoura')
-results = ('EMPATE!', 'JOGADOR VENCEU!',' COMPUTADOR VENCEU!', 'JOGADA INVÁLIDA!')
+results = (
+    'EMPATE!',
+    'JOGADOR VENCEU!',
+    'COMPUTADOR VENCEU!',
+    'JOGADA INVÁLIDA!'
+)
 
 computador = randint(0, 2)
 print('''Suas opções:
@@ -36,7 +41,7 @@ elif computador == 1:
     elif jogador == 1:
         print(results[0])
     elif jogador == 2:
-         print(results[1])
+        print(results[1])
     else:
         print(results[3])
 elif computador == 2:
