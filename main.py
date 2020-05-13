@@ -1,20 +1,20 @@
 from random import randint
 from time import sleep
 
-itens = ('Pedra', 'Papel', 'Tesoura')
-results = (
-    'EMPATE!',
-    'JOGADOR VENCEU!',
-    'COMPUTADOR VENCEU!',
-    'JOGADA INVÁLIDA!'
-)
+itens = ('Pedra',
+         'Papel',
+         'Tesoura')
+
+results = ('EMPATE!',
+           'JOGADOR VENCEU!',
+           'COMPUTADOR VENCEU!',
+           'JOGADA INVÁLIDA!')
 
 computador = randint(0, 2)
 print('''Suas opções:
-    [ 0 ] PEDRA
-    [ 1 ] PAPEL
-    [ 2 ] TESOURA
- ''')
+      [ 0 ] PEDRA
+      [ 1 ] PAPEL
+      [ 2 ] TESOURA''')
 
 jogador = int(input('Qual é a sua jogada? '))
 print('JO')
